@@ -1,0 +1,222 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+	    <meta charset="utf-8"> 
+	    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="format-detection" content="telephone=no" />
+        <meta name="msapplication-tap-highlight" content="no" />
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height"/>
+        <link rel="icon" type="image/png" href="img/logo.png" />
+        <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"/>
+        <link rel="stylesheet" type="text/css" href="css/animate.min.css"/>
+        <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css"/>
+        <link rel="stylesheet" type="text/css" href="css/header.css"/>
+        <link rel="stylesheet" type="text/css" href="css/style.css"/>
+        <link rel="stylesheet" href="css/scroll-css/jquery.mCustomScrollbar.min.css"/>
+        <title>I'Scream</title>
+        <!--[if lt IE 9]>
+		<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+		<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+		<![endif]-->
+    </head>
+    <body>
+
+	    
+		<nav class="navbar navbar-fixed-top navbar-inverse navbar-default">
+	<div class="container-fluid">
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle collapsed btn_burger" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+			<a class="navbar-brand brand logo_collapse" href="#"></a>
+		</div>
+	
+		<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+	
+			<ul class="nav navbar-nav">
+			    <li class="active activator"><a href="#">Films</a></li>
+			    <li class="dropdown">
+			    	<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Genre<span class="genre_active">Tous</span><span class="caret"></span></a> 
+			        <ul class="dropdown-menu navbar-inverse nav-genre genres" role="menu">
+			            <li class="activator li"><a href="#" class="genre"></a></li>
+					</ul> 
+			    </li>
+			    <li class="dropdown">
+			        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Trier par<span class="sort_active">Popularité</span><span class="caret"></span></a>
+			        <ul class="dropdown-menu navbar-inverse nav-sort-by" role="menu">	
+			            <li class="active activator"><a href="#" data-sort="toprank">Popularité</a></li>
+			            <li class="activator"><a href="#" data-sort="dateasc">Date <i class="fa fa-caret-up"></i></a></li>
+			            <li class="activator"><a href="#" data-sort="datedesc">Date <i class="fa fa-caret-down"></i></a></li>
+			      	</ul>
+			    </li>
+			</ul>
+			<a class="navbar-brand brand brand_center logo_non_collapse" href="#"></a>
+		</div>
+	</div>
+</nav>
+	
+<div class="input-group search-nav events_search">
+	<span class="input-group-btn">
+		<label for="search" class="btn btn-default search_button"><i class="fa fa-search"></i></label>
+	</span>
+	<input type="search" id="search" class="form-control search_input" placeholder="Recherche...">
+	</div>
+	
+	<div class="suggestions">
+	<div class="suggest code poster type">
+		<div class="opaque">
+			<a href="#"><img src="" class="suggest_affiche poster"/></a>
+			<div class="suggest_infos">
+				<h3 class="suggest_titre title"></h3>
+				<p><span class="suggest_date release_date"></span><i class="fa fa-circle"></i><span class="suggest_genre type"></span></p>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="container-fluid" id="content">
+	<div class="prev_affiches">
+		
+	</div>
+	<div class="affiches">
+		<a href="#" class="produit code">
+			<img src="" class="affiche poster"/>
+			<p class="titre title"></p>
+			<p class="date release_date"></p>
+		</a>
+	</div>
+	<a href="#" class="load_more"></a>
+</div>
+
+<div class="modal fade template_film" id="modal_film">
+	<div class="modal-dialog desc_dialog wallpaper">
+		<div class="modal-content desc_content">
+			<button type="button" class="close" data-dismiss="modal"><span>&times;</span></button>
+			<div class="modal-body desc_body">
+				<div class="container-fluid">
+					<div class="row">
+						<div class="col-xs-12 col-sm-offset-1 col-sm-3">
+							<div class="row">
+								<div class="col-xs-12">
+									<img src="" class="img-responsive pull-right desc_affiche poster">
+								</div>
+								<a href="#" class="col-sm-11 hidden-xs div_trailer trailer">
+									<i class="fa fa-play-circle"></i><span>Voir trailer</span>
+								</a>
+								<a href="#" class="col-xs-11 div_trailer cinema name" target="_blank">
+									<i class="fa fa-external-link"></i><span>Séances de cinéma</span>
+								</a>
+							</div>
+						</div>
+						<div class="col-xs-12 col-sm-7">
+							<h1 class="desc_titre title"></h1>
+							<span class="desc_date release_date"></span>
+							<i class="fa fa-circle"></i>
+							<span class="desc_duree runtime"></span>
+							<i class="fa fa-circle"></i>
+							<span class="desc_genre genres_string"></span>
+							<i class="fa fa-circle"></i>
+							<span class="desc_note">
+								<div class="progress">
+									<div class="progress-bar rating" role="progressbar" style="width: 75%;"></div>
+								</div>
+							</span>
+							<p class="desc_description synopsis"></p>
+							<p class="desc_casting">Acteurs: <span class="actors"></span></p>
+							<div class="row">
+								<div class="chargement">
+									<div class="rect1"></div>
+									<div class="rect2"></div>
+									<div class="rect3"></div>
+									<div class="rect4"></div>
+									<div class="rect5"></div>
+								</div>
+							</div>
+							<div class="row vod_dvd">
+								<div class="panel-group col-xs-12 col-lg-8" id="accordion">
+								  	<div class="panel panel-default vod_panel">
+									  	<a data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
+									    	<div class="panel-heading" role="tab">
+												<h4 class="panel-title">
+											          VOD
+									      		</h4>
+									    	</div>
+								    	</a>
+										<div id="collapseOne" class="panel-collapse collapse in">
+											<div class="panel-body">
+												<div class="services_vod">
+													<div class="row service_vod">
+														<div class="col-xs-4"><a target="_blank" href="#" class="min_url"><img src="" alt="" class="img-responsive img_vod img"/></a></div>
+														<div class="col-xs-4 min_price"></div>
+														<div class="col-xs-4 offer"><a target="_blank" href="#" class="min_url btn"><i class="fa fa-cart-arrow-down"></i></a></div>
+													</div>
+												</div>
+											</div>
+								    	</div>
+								  	</div>
+								  	<div class="panel panel-default dvd_panel">
+									  	<a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">
+									    	<div class="panel-heading" role="tab">
+												<h4 class="panel-title">
+														DVD/BluRay
+									      		</h4>
+									    	</div>
+						        		</a>
+										<div id="collapseTwo" class="panel-collapse collapse">
+											<div class="panel-body">
+												<div class="services_dvd">
+													<div class="row service_vod">
+														<div class="col-xs-4"><a target="_blank" href="#" class="url"><img src="img/amazon.png" alt="" class="img-responsive img_vod"/></a></div>
+														<div class="col-xs-4 price"></div>
+														<div class="col-xs-4 offer"><a target="_blank" href="#" class="url"><i class="fa fa-cart-arrow-down"></i></a></div>
+													</div>
+												</div>
+								      		</div>
+								    	</div>
+								  	</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>	
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="modal fade template_movie" id="modal_trailer">
+	<div class="modal-dialog trailer_dialog">
+		<div class="modal-content trailer_content">
+			<button type="button" class="close" data-dismiss="modal"><span>&times;</span></button>
+			<div class="modal-body trailer_body">
+				<div class="embed-responsive embed-responsive-16by9 trailer">
+			    	<iframe class="embed-responsive-item url_trailer" src="" frameborder="0" allowfullscreen="" style="height: 80%; width: 100%;"></iframe>
+			    </div>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="modal" id="chargement">
+	<div class="modal-dialog spinner">
+		
+	</div>
+	<div id="msg_chargement">
+		Chargement..
+	</div>
+</div>
+
+        <script type="text/javascript" src="cordova.js"></script>
+        <script type="text/javascript" src="js/library/jquery-2.1.3.min.js"></script>
+        <script type="text/javascript" src="js/library/transparency.min.js"></script>
+        <script type="text/javascript" src="js/library/bootstrap.min.js"></script>
+        <script type="text/javascript" src="js/library/scroll-js/jquery.mCustomScrollbar.concat.min.js"></script>
+        <script type="text/javascript" src="js/functions/config.js"></script>
+        <script type="text/javascript" src="js/functions/events.js"></script>
+        <script type="text/javascript" src="js/functions/api.js"></script>
+        <script type="text/javascript" src="js/functions/load.js"></script>
+        <script type="text/javascript" src="js/functions/index.js"></script>
+    </body>
+</html>

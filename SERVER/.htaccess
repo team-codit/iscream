@@ -1,0 +1,4 @@
+RewriteEngine On
+RewriteCond $1 !^(index\.php|images|robots\.txt|css|js)
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^(.*)$	/index.php/$1 [L]

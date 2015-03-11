@@ -1,0 +1,54 @@
+<nav class="navbar navbar-fixed-top navbar-inverse navbar-default">
+	<div class="container-fluid">
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle collapsed btn_burger" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+			<a class="navbar-brand brand logo_collapse" href="#"></a>
+		</div>
+	
+		<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+	
+			<ul class="nav navbar-nav">
+			    <li class="active activator"><a href="#">Films</a></li>
+			    <li class="activator"><a href="#">Séries</a></li>
+			    <li class="dropdown">
+			    	<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Genre<span class="genre_active">Tous</span><span class="caret"></span></a> 
+			        <ul class="dropdown-menu navbar-inverse nav-genre genres" role="menu">
+			            <li class="activator li"><a href="#" class="genre"></a></li>
+					</ul> 
+			    </li>
+			    <li class="dropdown">
+			        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Trier par<span class="sort_active">Popularité</span><span class="caret"></span></a>
+			        <ul class="dropdown-menu navbar-inverse nav-sort-by" role="menu">	
+			            <li class="active activator"><a href="#" data-sort="toprank">Popularité</a></li>
+			            <li class="activator"><a href="#" data-sort="dateasc">Date <i class="fa fa-caret-up"></i></a></li>
+			            <li class="activator"><a href="#" data-sort="datedesc">Date <i class="fa fa-caret-down"></i></a></li>
+			      	</ul>
+			    </li>
+			</ul>
+			<a class="navbar-brand brand brand_center logo_non_collapse" href="#"></a>
+		</div>
+	</div>
+</nav>
+	
+<div class="input-group search-nav events_search">
+	<span class="input-group-btn">
+		<label for="search" class="btn btn-default search_button"><i class="fa fa-search"></i></label>
+	</span>
+	<input type="search" id="search" class="form-control search_input" placeholder="Recherche...">
+	</div>
+	
+	<div class="suggestions">
+	<div class="suggest code poster type">
+		<div class="opaque">
+			<a href="#"><img src="" class="suggest_affiche poster"/></a>
+			<div class="suggest_infos">
+				<h3 class="suggest_titre title"></h3>
+				<p><span class="suggest_date release_date"></span><i class="fa fa-circle"></i><span class="suggest_genre type"></span></p>
+			</div>
+		</div>
+	</div>
+</div>

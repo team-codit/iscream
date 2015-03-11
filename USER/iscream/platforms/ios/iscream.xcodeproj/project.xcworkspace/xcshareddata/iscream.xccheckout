@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>31951A4B-6410-4801-A98C-68F7A8EE2FB9</string>
+	<key>IDESourceControlProjectName</key>
+	<string>iscream</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>1586576b-5c7f-497b-855c-82c868351710++1558</key>
+		<string>https://rendu-svn.etna-alternance.net/v2/2019_Prep'ETNA_SDC-SGBD_2_0-1239/Decouverte%25252525252525252520de%25252525252525252520la%25252525252525252520gestion%25252525252525252520de%25252525252525252520donnees/mages_i</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>USER/iscream/platforms/ios/iscream.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>1586576b-5c7f-497b-855c-82c868351710++1558</key>
+		<string>../../../../../..</string>
+	</dict>
+	<key>IDESourceControlProjectRepositoryRootDictionary</key>
+	<dict>
+		<key>1586576b-5c7f-497b-855c-82c868351710++1558</key>
+		<string>https://rendu-svn.etna-alternance.net/v2/2019_Prep'ETNA_SDC-SGBD_2_0-1239</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://rendu-svn.etna-alternance.net/v2/2019_Prep'ETNA_SDC-SGBD_2_0-1239/Decouverte%25252525252525252520de%25252525252525252520la%25252525252525252520gestion%25252525252525252520de%25252525252525252520donnees/mages_i/USER/iscream/platforms/ios/iscream.xcodeproj</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>1586576b-5c7f-497b-855c-82c868351710++1558</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.subversion</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>1586576b-5c7f-497b-855c-82c868351710++1558</string>
+			<key>IDESourceControlWCCName</key>
+			<string>datacamp</string>
+		</dict>
+	</array>
+</dict>
+</plist>
