@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+
+<html lang="fr-FR">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="./asset/css/style.css" type="text/css">
+    <title>TiViPush</title>
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel="shortcut icon" href="grafics/icon.ico">
+</head>
+
+<body>
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <a class="navbar-brand go_to_chaines_tele" href="#"><img alt="TiviPush" src="./grafics/tv.png" height="30"></a>
+				<a class="boutonmenu go_to_chaines_tele" href="#"><i class="fa fa-bars fa-2x"></i></a>
+            </div>
+        </div>
+    </nav>
+    <div class="templates">
+        <div class="template chargement"></div>
+
+        <div class="template chaines_tele">
+	        <div class="container">
+                <div class="chaines"></div>
+            </div>
+        </div>
+
+        <div class="template flux active">
+            <div class="container-fluid">
+                <div class="item">
+		            <div class="row max">
+		                <div class="col-xs-12 max">
+							<div class="col-lg-6 col-md-6 hidden-sm hidden-xs my_bottom">
+								<div class="jumbotron best_tweet">
+									<h4><span class="name"></span> <a href="#" class="user link"></a></h4>
+		                        	<p class="tweet"></p>
+		                        	<p class="infos_tweet">
+			                        	<a href="#" target="_blank" class="link"><i class="fa fa-clock-o st_time"></i> <span class="time"></span></a>
+			                        	<a href="#" target="_blank" class="set_ret link"><i class="fa fa-retweet"></i> <span class="retweet"></span></a>
+			                        	<a href="#" target="_blank" class="set_fav link"><i class="fa fa-star"></i> <span class="star"></span></a>
+		                        	</p>
+								</div>
+								<div class="jumbotron infos">
+									<a href="#" class="next_pro">Programme suivant <i class="fa fa-chevron-right"></i></a>
+									<a href="#" class="back_pro"><i class="fa fa-chevron-left"></i> Revenir</a>
+		                        	<h2></h2>
+			                        <p class="hidden-md description"></p>
+			                        <a href="#" class="read_more">Lire la suite <i class="fa fa-chevron-down"></i> <br /></a>
+									<p class="more_text"></p>
+									<a href="#" class="read_less">Masquer <i class="fa fa-chevron-up"></i> <br /></a>
+			                        <div class="progress info_horaire">
+			                            <div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100">
+			                                <span></span>
+			                            </div>
+			                        </div>										
+								</div>
+	                    	</div>
+	                        <div class="col-xs-6 col-sm-6 col-md-3 col-lg-2 max tweets_style">
+								<ul class="important nav nav-pills nav-stacked">
+									<li>
+										<h3 class="panel-title"><i class="fa fa-twitter"></i> Tendances</h3>
+										<i class="caret"></i>
+									</li>
+								</ul>
+				                <div class="top_tweets">
+					                <ul class="nav nav-pills nav-stacked">
+						                
+					                </ul>
+				                </div>
+			                </div>
+							<div class="col-xs-6 col-sm-6 col-md-3 col-lg-2 info_channel">
+								<ul class="important nav nav-pills nav-stacked">
+									<li>
+										<h3 class="panel-title"><i class="fa fa-external-link"></i> Sujets à l'émission</h3>
+										<i class="caret"></i>
+									</li>
+								</ul>
+				                <div class="linked">
+					                <ul class="nav nav-pills nav-stacked et_stamp">
+						                
+					                </ul>
+				                </div>
+							</div>
+	                    </div>
+	                </div>
+	            </div>
+            </div>
+				<div class="controls_chanel hidden-sm hidden-xs hidden-md">
+					<div class="left">
+						<a class="left carousel-control" href="#"><span class="sr-only">Previous</span></a>
+		         	</div> 
+				 	<div class="right">
+						<a class="right carousel-control" href="#"><span class="sr-only">Next</span></a>
+					</div>
+				</div>
+            </div>
+        </div>
+
+        <div class="template carousel">
+            <div class="item">
+                <div class="carousel-caption">
+	                <h1></h1>
+	                <h2></h2>
+                </div>
+            </div>
+        </div>
+        <div class="template word">
+	        <li class="word flipInX animated"></li>
+        </div>
+        <div class="template magique">
+	        <li class="word flipInX animated">
+	        	<div class="item"></div>
+	        </li>
+        </div>
+        <div class="template location">
+	        <li class="word flipInX animated">
+	        	<iframe frameborder="0"></iframe>
+	        </li>
+        </div>
+<div class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+	<div class="modal-di+alog">
+			 <div class="modal-content">
+				 <div class="modal-header">
+		 			<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+		 				<h4 class="modal-title et_stamp_title"></h4>
+		 		 </div>
+		 		 <div class="modal-body row">
+			 		 <div class="stamp_img col-xs-3"></div>
+					<div class="stamp_desc col-xs-9">
+						<p></p>
+					</div>
+  			 </div>
+  			 <div class="modal-footer">
+  				<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      		</div>
+		</div>
+	</div>
+</div>
+	<script src="asset/js/jquery.min.js" type="text/javascript"></script>
+	<script src="asset/js/bootstrap.min.js" type="text/javascript"></script>
+	<script src="asset/js/config.js" type="text/javascript"></script>
+	<script src="asset/js/functions/time.js" type="text/javascript"></script>
+	<script src="asset/js/functions/helpers.js" type="text/javascript"></script>
+	<script src="asset/js/functions/api.js" type="text/javascript"></script>
+	<script src="asset/js/functions/controls.js" type="text/javascript"></script>
+	<script src="asset/js/functions/view.js" type="text/javascript"></script>
+	<script src="asset/js/functions/events.js" type="text/javascript"></script>
+	<script src="asset/js/script.js" type="text/javascript"></script>
+</body>
+</html>
